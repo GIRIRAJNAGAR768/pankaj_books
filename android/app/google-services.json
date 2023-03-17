@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012242455025",
+    "firebase_url": "https://pankajbooks-58790-default-rtdb.firebaseio.com",
+    "project_id": "pankajbooks-58790",
+    "storage_bucket": "pankajbooks-58790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012242455025:android:a75ad66a03c76398ac4c50",
+        "android_client_info": {
+          "package_name": "com.pankaj_books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012242455025-fthhqmm3v0dcnpij50lmlsio8ngfuqam.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankaj_books",
+            "certificate_hash": "7ec0e375504bb9b0304acc4f92657875926ee7a7"
+          }
+        },
+        {
+          "client_id": "1012242455025-84mpsom3pt2efu73l87bm6e243vcfh27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaPU17vlDnvImqLB5HHHIpz4opH9V2mYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012242455025-84mpsom3pt2efu73l87bm6e243vcfh27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
