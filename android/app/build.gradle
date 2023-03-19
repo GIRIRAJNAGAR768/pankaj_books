@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services' // <- Add this line
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -228,6 +229,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('pankaj_books.keystore')
+            storePassword 'Rajngr@123'
+            keyAlias 'key0'
+            keyPassword 'Rajngr@123'
+        }
     }
     buildTypes {
         debug {
@@ -239,6 +246,7 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
 
@@ -290,6 +298,8 @@ dependencies {
 
     implementation platform('com.google.firebase:firebase-bom:31.2.3')
     implementation 'com.google.firebase:firebase-analytics'
+    implementation project(':react-native-view-pdf')
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }
 
 if (isNewArchitectureEnabled()) {
